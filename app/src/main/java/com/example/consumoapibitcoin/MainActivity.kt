@@ -34,6 +34,19 @@ class MainActivity : AppCompatActivity() {
             calcular()
         }
     }
+
+    /*
+    {"ticker":
+    {"high":"360083.00000000",
+    "low":"343300.69916000",
+    "vol":"83.99825268",
+    "last":"355000.00000000",
+    "buy":"355000.00001000",
+    "sell":"355000.00999000",
+    "open":"357928.00000000",
+    "date":1636754361}}
+     */
+
     fun buscaCotizacion(){
         doAsync {
             val respuesta = URL(API_URL).readText()
