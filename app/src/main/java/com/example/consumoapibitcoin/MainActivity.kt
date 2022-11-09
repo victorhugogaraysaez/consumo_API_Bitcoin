@@ -63,10 +63,10 @@ class MainActivity : AppCompatActivity() {
             val mayorFormateada = f.format(mayorBitcoin * 146)
             val menorFormateada = f.format(menorBitcoin * 146)
             uiThread {
-                txtCotizacion.setText("$cotizacionFormateada")
-                txtMayor.setText("$mayorFormateada")
-                txtMenor.setText("$menorFormateada")
-                txtData.setText("$dataFormateada")
+                txtCotizacion.setText(cotizacionFormateada)
+                txtMayor.setText(mayorFormateada)
+                txtMenor.setText(menorFormateada)
+                txtData.setText(dataFormateada)
             }
         }
     }
